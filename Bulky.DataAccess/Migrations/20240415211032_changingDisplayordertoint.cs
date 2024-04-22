@@ -2,9 +2,9 @@
 
 #nullable disable
 
-#pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
 
-namespace BulkyWeb.Migrations
+
+namespace Bulky.DataAccess.Migrations
 {
     /// <inheritdoc />
     public partial class changingDisplayordertoint : Migration
@@ -22,7 +22,7 @@ namespace BulkyWeb.Migrations
 
             migrationBuilder.InsertData(
                 table: "Categories",
-                columns: new[] { "Id", "DisplayOrder", "Name" },
+                columns: ["Id", "DisplayOrder", "Name"],
                 values: new object[,]
                 {
                     { 1, 1, "Action" },
